@@ -19,7 +19,7 @@ export class WeatherService {
 
     getWeather(location: any) {
         return this.http.get(
-            `https://api.apixu.com/v1/current.json?key=d65a95ad3d5b337a675c8fb4656b5fde&q=` + location,
+            `http://api.weatherstack.com/current?access_key=d65a95ad3d5b337a675c8fb4656b5fde&query=` + location,
             this.requestOptions
         );
     }
