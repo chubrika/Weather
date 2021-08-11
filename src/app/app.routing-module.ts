@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CurrentWeatherComponent } from './current-weather/current-weather.component';
-import { ForecastComponent } from './forecast/forecast.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { UvComponent } from './uv/uv.component';
+import { CurrentWeatherComponent } from './components/current-weather/current-weather.component';
+import { ForecastComponent } from './components/forecast/forecast.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { UvComponent } from './components/uv/uv.component';
 
 const routes: Routes = [
   {
@@ -11,7 +11,7 @@ const routes: Routes = [
     component: ForecastComponent,
   },
   {
-    path: 'home',
+    path: '',
     component: HomePageComponent,
   },
   {
